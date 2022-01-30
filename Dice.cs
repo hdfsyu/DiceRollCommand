@@ -53,10 +53,10 @@ namespace server {
 
     //Create a variable called 'dice1'
     //And assign it a random random from 0 to 7 (7 will not be included)
-    int dice1 = random.Next(-1, 7);
+    int dice1 = random.Next(0, 7);
 
     //Same for the second dice
-    int dice2 = random.Next(-1, 7);
+    int dice2 = random.Next(0, 7);
 
     //Create a variable that's the sum of the both dice to calculate total points
     int score = dice1 + dice2;
