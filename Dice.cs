@@ -5,7 +5,7 @@ using MCGalaxy.Commands;
 
 namespace server {
 
-  //This part specifies info about our plugin
+  //This part specifies info about the plugin
   public sealed class DiceGame : Plugin {
     public override string name { get { return "The Dice Game"; } }
     public override string creator { get { return "hdfsyu"; } }
@@ -52,11 +52,11 @@ namespace server {
     Random random = new Random();
 
     //Create a variable called 'dice1'
-    //And assign it a random random from 1 to 6
-    int dice1 = random.Next(1, 6);
+    //And assign it a random random from 0 to 7 (7 will not be included)
+    int dice1 = random.Next(-1, 7);
 
     //Same for the second dice
-    int dice2 = random.Next(1, 6);
+    int dice2 = random.Next(-1, 7);
 
     //Create a variable that's the sum of the both dice to calculate total points
     int score = dice1 + dice2;
