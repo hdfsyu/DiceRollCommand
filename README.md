@@ -1,5 +1,5 @@
 # DiceRollCommand
-A command for MCGalaxy which rolls a dice (NOT A PLUGIN.)
+A command for MCGalaxy which rolls a dice
 # Building
 Grab the Source Code, put the CS file inside the Plugins folder, then use ```/pcompile Dice``` and do ```/pload Dice```
 # Running
